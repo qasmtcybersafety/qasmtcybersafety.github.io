@@ -1,0 +1,165 @@
+body {
+  background-color: #fefffd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color:#333;
+}
+
+.big {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5em;
+}
+
+.tab-bar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tab-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tab-bar li {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.tab-bar li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.tab-bar li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* change top to bottom */
+  height: 3px;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.tab-bar li a:hover::before {
+  opacity: 0.2;
+}
+
+.tab-bar li.active a {
+  color: #fff;
+}
+
+.tab-bar li.active a::before {
+  opacity: 1;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.collapsible {
+  background-color: #e5e5e5;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0; /*Check this line of code is something breakse in the collapsibles*/
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.column {
+  flex: 33.33%;
+  height: 120px ;
+  padding: 10px;
+  margin: 5px;
+  background-color: #cccccc;
+  text-align: center;
+}
+.container {
+   display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height:250px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #d8d8d8;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 10px;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 0px;
+}

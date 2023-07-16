@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cybersafety Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 class="title">Cybersafety Website</h1>
+    <nav class="tab-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shortcuts.html">Shortcuts</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <h3><center>Click on the topic you want to learn about!</center></h3>
+    <button type="button" class="collapsible">🔒 Security</button>
+    <div class="content">
+      <p>
+        </b>Security</b> is vital in order to protect your files, data, games and other important informationyou may have saved on your computer. <b>Viruses</b>, such as those designed by hackers, can be used to take information and data from your computer, especially sensitive data such as bank details and personal information.
+        <br></br>
+        A way to prevent this from happening are antiviruses, which are special software which can be installed in order to protect your computer. Here's a list of some popular antiviruses which you can use.
+        <table>
+          <tr>
+            <th>Antivirus</th>
+            <th>Price</th>
+            <th>Type</th>
+          </tr>
+          <tr>
+            <td>Windows Defender</td>
+            <td>Free</td>
+            <td>App (no need to download it, comes with Windows)</td>
+          </tr>
+          <tr>
+            <td>Avast</td>
+            <td>Free or $69.99/year for premium</td>
+            <td>App</td>
+          </tr>
+          <tr>
+            <td>Malwarebytes</td>
+            <td>$39.99/year for premium</td>
+            <td>App or browser extension</td>
+          </tr>
+          <tr>
+            <td>Kaspersky</td>
+            <td>$29.99/year for basic or $99.99/year for premium</td>
+            <td>App or browser extension</td>
+          </tr>
+        </table>
+      </p>
+    </div>
+    </div>
+    <button type="button" class="collapsible">🦠 Viruses</button>
+    <div class="content">
+      <p>There are many types of viruses, however, here are the few you should keep an eye out for:
+          <br></br>
+          1. <b>File infectors</b>: these viruses attach themselves to executable files on your computer, infecting the files so that every time you run that program, the virus is also executed.
+          <br></br>
+          2. <b>Boot sector viruses</b>: these viruses infect the boot sector of your computer's hard drive, allowing them to be loaded into memory every time the computer starts up.
+          <br></br>
+          3. <b>Macro viruses</b>: these viruses infect documents that use macros, such as Microsoft Word documents or Excel spreadsheets, and can spread to other documents when the infected file is opened.
+          <br></br>
+          4. <b>Trojan horses</b>: these are viruses that disguise themselves as harmless or useful programs, but actually contain malicious code that can harm your computer.
+          <br></br>
+          5. <b>Worms</b>: these are viruses that can replicate and spread themselves across networks or the internet, often causing significant damage to computer systems.
+      </p>
+    </div>
+    <button type="button" class="collapsible">🔑 Password Security</button>
+    <div class="content">
+      <p>Creating strong and unique passwords is crucial for protecting your online accounts. Here are some tips for password security:
+          <br></br>
+          1. Use a different password for each account.
+          <br></br>
+          2. Use a combination of letters, numbers, and symbols.
+          <br></br>
+          3. Avoid using personal information in your passwords.
+          <br></br>
+          4. Consider using a password manager to store and generate strong passwords.
+          <br></br>
+          5. Change your passwords regularly, especially for important accounts like email and online banking.
+          <b>Check the security of your password using the website below!</b>
+          <br></br>
+          <a href="https://www.passwordmonster.com/">Password Strength Meter</a>
+      </p>
+    </div>
+    <button type="button" class="collapsible">📶 Wi-Fi Security</button>
+    <div class="content">
+      <p>Protecting your Wi-Fi network is important to prevent unauthorized access to your internet connection and devices. Here are some tips for Wi-Fi security:
+          <br></br>
+          1. Change the default password on your Wi-Fi router.
+          <br></br>
+          2. Use a strong password for your Wi-Fi network.
+          <br></br>
+          3. Enable WPA2 encryption on your Wi-Fi network.
+          <br></br>
+          4. Disable remote management of your Wi-Fi router.
+          <br></br>
+          5. Use a VPN when accessing public Wi-Fi networks to protect your data.
+      </p>
+    </div>
+    <button type="button" class="collapsible">📧 Email Security</button>
+    <div class="content">
+      <p>Keeping your email account secure is important to prevent unauthorized access and protect your personal information. Here are some tips for email security:
+          <br></br>
+          1. Use a strong and unique password for your email account.
+          <br></br>
+          2. Enable two-factor authentication for your email account.
+          <br></br>
+          3. Be cautious of phishing emails and suspicious links or attachments.
+          <br></br>
+          4. Avoid using public computers or Wi-Fi networks to access your email account.
+          <br></br>
+          5. Regularly review your email account settings and activity for any suspicious activity.
+      </p>
+    </div>
+    <button type="button" class="collapsible">📱 Mobile Device Security</button>
+    <div class="content">
+      <p>Securing your mobile devices, such as smartphones and tablets, is important to protect your personal information and prevent unauthorized access. Here are some tips for mobile device security:
+          <br></br>
+          1. Use a passcode, fingerprint, or face recognition to lock your device.
+          <br></br>
+          2. Enable two-factor authentication for your important apps and accounts.
+          <br></br>
+          3. Avoid downloading apps from untrusted sources.
+          <br></br>
+          4. Keep your device and apps up to date with the latest security patches.
+          <br></br>
+          5. Use a VPN when accessing public Wi-Fi networks to protect your data.
+      </p>
+    </div>
+  </body>
+</html>
+  
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
