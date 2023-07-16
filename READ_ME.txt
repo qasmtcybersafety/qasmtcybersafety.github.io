@@ -1,1 +1,1 @@
-In order to use the webpage, double click 'homepage.html'.
+
